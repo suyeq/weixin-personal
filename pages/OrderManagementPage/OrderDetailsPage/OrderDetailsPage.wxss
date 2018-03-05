@@ -1,0 +1,138 @@
+.container{
+    /*弹性模型*/
+    display:flex;
+    /*垂直方向 列方向 排布*/
+    flex-direction:column; 
+    width: 100%;
+    height: 100%;
+    
+}
+swiper{
+     width:100%;
+     height:600rpx;
+ }
+ /*less sass*/
+ swiper image{
+     width:100%;
+     height:600rpx;
+ }
+.firstlayout{
+   display:flex;
+   flex-direction:column;
+   width: 100%;
+   height: 150rpx;
+}
+.firstlayoutitem{
+   display:flex;
+   flex-direction:row;
+   width: 100%;
+   height: 50rpx;
+   font-size: 30rpx;
+   color: #DCDCDC;
+   margin-top: 20rpx;
+}
+.firstlayoutitemtwo{
+  flex: 1;
+  height: 100%;
+  text-align: right;
+  margin-right: 60rpx;
+}
+.firstfontstyle{
+  font-size: 40rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.secondfontstyle{
+  margin-left: 30rpx;
+}
+.lineview{
+   width: 100%rpx;
+  height: 1px;
+  background: #708090;
+}
+.secondlayout{
+  display:flex;
+  flex-direction:row;
+  width: 100%;
+  height: 200rpx;
+  align-items: center;
+}
+.secondlayoutitem{
+  display:flex;
+  flex-direction:column;
+  flex: 1;
+  height: 160rpx;
+  justify-content:center;
+  align-items: center;
+}
+.thirdfontstyle{
+  color: #DCDCDC;
+  margin-bottom: 10rpx;
+  font-size: 34rpx;
+}
+.fourfontstyle{
+  color: #FF0000;
+  font-size: 34rpx;
+  margin-top: 10rpx;
+}
+.lineviewtwo{
+  width:1px ;
+  height: 60px;
+  background: #708090;
+}
+
+.thirdlayout{
+  display:flex;
+  flex-direction:column;
+  width: 100%;
+  height: 200rpx;
+}
+.thirdlayoutitem{
+  display:flex;
+  flex-direction:row;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+  margin-left: 30rpx;
+}
+.redround{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background: red;
+}
+.thirdlayoutitemtwo{
+   margin-left: 30rpx;
+   font-size: 36rpx;
+}
+.fivefontstyle{
+  font-size: 34rpx;
+  color: #DCDCDC;
+}
+.journey-container{
+   display:flex;
+   flex-direction:row;
+    border: 1px solid #405f80;
+    width: 400rpx;
+    height: 100rpx;
+    border-radius: 10px;
+   justify-content:center;
+    align-items: center;
+    margin-top: 30rpx;
+    margin-left: 176rpx;
+    background: #405f80;
+}
+
+.journey{
+    font-size:22rpx;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+fourlayoutstyle{
+  display:flex;
+  flex-direction:column;
+  width: 100%rpx;
+  height: 300rpx;
+  align-items: center;
+  justify-content:center;
+}

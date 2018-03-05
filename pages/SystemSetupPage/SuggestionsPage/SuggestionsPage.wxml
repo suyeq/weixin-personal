@@ -1,0 +1,10 @@
+<view class='maincontainer'>
+    <view class='container'>
+        <input class='input'  placeholder-style="font-size:18px;margin-top:-60rpx"></input>
+    </view>
+    <view class='fourlayoutstyle' bindtap='showToast'>
+        <view class="journey-container" >
+            <text class="journey">提交</text>
+        </view>
+    </view>
+</view>

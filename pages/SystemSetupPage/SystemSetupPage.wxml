@@ -1,0 +1,30 @@
+<view>
+    <view class='lineviewtwo'></view>
+    <view class='thirdlayout' bindtap='bindTababoutus'>
+        <view class='thirdlayout'>
+            <text class='secondfontstyle'>关于我们</text>
+        </view>
+        <view class='fourthlayout'>
+            <image src='/images/2.png' class='thirdimagestyle'></image>
+        </view>
+    </view>
+    <view class='lineviewtwo'></view>
+    <view class='thirdlayout' bindtap='bindTabSuggestion'>
+        <view class='thirdlayout'>
+            <text class='secondfontstyle'>意见反馈</text>
+        </view>
+        <view class='fourthlayout'>
+            <image src='/images/2.png' class='thirdimagestyle'></image>
+        </view>
+    </view>
+    <view class='lineviewtwo'></view>
+    <view class='thirdlayout' bindtap='bindTabVersion'>
+        <view class='thirdlayout'>
+            <text class='secondfontstyle'>版本信息</text>
+        </view>
+        <view class='fourthlayout'>
+            <image src='/images/2.png' class='thirdimagestyle'></image>
+        </view>
+    </view>
+    <view class='lineviewtwo'></view>
+</view>

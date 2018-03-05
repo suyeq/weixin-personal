@@ -1,0 +1,19 @@
+ {
+  "pages":[
+    "pages/PersonalPage/PersonalPage",
+    "pages/BasicInformationPage/BasicInformationPage",
+    "pages/OrderManagementPage/OrderDetailsPage/OrderDetailsPage",
+    "pages/OrderManagementPage/OrderManagementPage",
+    "pages/SystemSetupPage/SystemSetupPage",
+     "pages/BasicInformationPage/InputPage/InputPage",
+     "pages/SystemSetupPage/SuggestionsPage/SuggestionsPage",
+     "pages/AddressPage/directory",
+     "pages/SystemSetupPage/AboutUsPage/AboutUsPage"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "买家",
+    "navigationBarTextStyle":"black"
+  }
+}

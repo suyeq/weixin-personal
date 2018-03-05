@@ -1,0 +1,53 @@
+<!--directory.wxml-->
+<!--<view class="container">
+  <view style="position:fixed ;top:40%;box-sizing:border-box;padding:20rpx;text-align:center;width:100%">
+    <!--<view style="padding-bottom:20rpx">{{areaInfo}}</view>-->
+    <!--<button bindtap="selectDistrict">{{areaInfo}}</button>
+  </view>
+</view>-->
+<view class='container'>
+    <view class='firstlayout' bindtap="selectDistrict">
+        <text>省、市、区：</text>
+        <view class='buttonone'>
+            <text class='fontstyle'>{{areaInfo}}</text>
+        </view>
+    </view>
+    <view class='firstlayout'>
+        <text>详情地址：</text>
+        <view class='buttontwo' style="margin-left:34rpx" >
+            <input placeholder="请输入" placeholder-style="font-size:15px;color:black"></input>
+        </view>
+    </view>
+    <view class='fourlayoutstyle' >
+        <view class="journey-container" bindtap='showToast'>
+            <text class="journey">提交</text>
+        </view>
+    </view>
+</view>
+
+
+
+<view class="dialog-mask " style="z-index:11;visibility:{{addressMenuIsShow ? 'visible': 'hidden'}}" bindtap="hideCitySelected" />
+<!--城市三级联动-->
+<!--使用动画时不能wx:if="{{city.length>0&&isVisible}}" ，不能hidden=''属性否则无动画效果-->
+<view class="picker-view" animation="{{animationAddressMenu}}" style="visibility:{{addressMenuIsShow ? 'visible':'hidden'}}">
+  <view style="height:10% ;width:95%;margin-top:10rpx">
+    <text catchtap="cityCancel">取消</text>
+    <text style="float: right" catchtap="citySure">确定</text>
+  </view>
+  <!--"可以显示默认的城市，使用后级联选择城市反应很慢就不使用了-->
+  <picker-view style="width: 100%; height: 300px;" bindchange="cityChange" value="{{value}}" wx:key="">
+    <picker-view-column>
+      <view wx:for="{{provinces}}" class="picker-item">
+        {{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" class="picker-item" wx:key="">
+        {{item.name}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{areas}}" class="picker-item" wx:key="">
+        {{item.name}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

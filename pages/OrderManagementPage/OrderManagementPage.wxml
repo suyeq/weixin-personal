@@ -1,0 +1,52 @@
+<view class='container'>
+    <view class='lineview'></view>
+    <view class='firstlayout'>
+        <view class='firstlayoutitem' bindtap='selectColorone'>
+            <view class='firstlayoutitemtwo'>
+                <text class="{{onGoing?'firstfontcolorstyle':'secondfontcolorstyle'}}">进行中</text>
+            </view>
+            <view class="{{onGoing?'lineviewtwo':'lineviewthree'}}"></view>
+        </view>
+        <view class='lineviewfour'></view>
+        <view class='firstlayoutitem' bindtap='selectColortwo'>
+            <view class='firstlayoutitemtwo'>
+                <text class="{{completed?'firstfontcolorstyle':'secondfontcolorstyle'}}">已完成</text>
+            </view>
+            <view class="{{completed?'lineviewtwo':'lineviewthree'}}"></view>
+        </view>
+        <view class='lineviewfour'></view>
+        <view class='firstlayoutitem' bindtap='selectColorthree'>
+            <view class='firstlayoutitemtwo'>
+                <text class="{{canceled?'firstfontcolorstyle':'secondfontcolorstyle'}}">已取消</text>
+            </view>
+            <view class="{{canceled?'lineviewtwo':'lineviewthree'}}"></view>
+        </view>
+    </view>
+    
+    <block wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
+        <view>
+            <view class='secondlayout'>
+                <image src="{{item.imagesrc}}" class='firstimagestyle'></image>
+                <view class='containeritem'>
+                    <view class='secondlayoutitemtwo'>
+                    <text>{{item.name}}</text>
+                <view class='secondlayoutitem' bindtap="onPostTap">
+                    <text>订单详情</text>
+                </view>
+            </view>
+            <view class='firstlayoutitemthree'>
+                <text class='thirdfondstyle'>缺少项：</text>
+                <text class='thirdfondstyle'>{{item.lackofitems}}</text>
+            </view>
+            <view class='firstlayoutitemfour'>
+                <text class='secondfondstyle'>¥ {{item.price}}</text>
+                <view class='firstlayoutitemfouritem' bindtap="showToast">
+                    <text>确认收货</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='lineview'></view>
+        </view>
+    </block>
+</view>

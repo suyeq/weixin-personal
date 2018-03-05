@@ -1,0 +1,95 @@
+.container{
+    /*弹性模型*/
+    display:flex;
+    /*垂直方向 列方向 排布*/
+    flex-direction:column;
+    /*居中*/
+    /*align-items:center;*/
+    /*要从整体解决排布的问题是最好的方案*/ 
+}
+
+.firstlayout{
+   /*弹性模型*/
+    display:flex;
+    /*垂直方向 列方向 排布*/
+    flex-direction:column;
+    /*居中*/
+    align-items:center;
+    /*要从整体解决排布的问题是最好的方案*/ 
+    width: 100%;
+    height: 400rpx;
+    background: #708090;
+}
+
+.firstimagestyle{
+  width: 180rpx;
+  height: 180rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  border:3px solid #FFFFFF;
+}
+
+.firstfontstyle{
+ font-size:34rpx;
+ color: #FFFFFF;
+}
+
+.secondlayout{
+   width: 550rpx;
+   height: 50rpx;
+   /*弹性模型*/
+    display:flex;
+    flex-direction: row;
+    /*居中*/
+   /*align-items:center;*/
+   justify-content:center;
+   margin-top: 25rpx;
+}
+.secondlayoutitem{
+    width: 50%;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.lineview{
+  width: 2rpx;
+  height: 40rpx;
+  background: #FFFFFF;
+  margin-top: 6rpx;
+}
+
+.thirdlayout{
+    width:100%;
+   height: 100rpx;
+   /*弹性模型*/
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+.secondimagestyle{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+}
+
+.fourthlayout{
+  width:50%;
+  height: 100%;
+  text-align:right;
+}
+.thirdimagestyle{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx;
+}
+.secondfontstyle{
+   font-size:36rpx;
+   color: #000000;
+}
+
+.lineviewtwo{
+  width: 100%rpx;
+  height: 1px;
+  background: #708090;
+}

@@ -1,0 +1,59 @@
+<view class='containe'>
+    <view class='lineviewtwo'></view>
+    <view class='firstlayout'>
+        <image src='/images/9.jpg'  class='firstimagestyle'></image>
+        <text class='firstfontstyle'>V1.0.0</text>
+    </view>
+    <view class='lineviewtwo'></view>
+    <view class='containe'>
+        <view class='thirdlayout'>
+            <view class='thirdlayout'>
+                <image class='secondimagestyle' src='/images/13.png'></image>
+                <text class='secondfontstyle'>微信公众号</text>
+            </view>
+            <view class='fourthlayout'>
+                <text>筑梦工作室</text>
+            </view>
+        </view>
+        <view class='lineviewtwo'></view>
+        <view class='thirdlayout' >
+            <view class='thirdlayout'>
+                <image class='secondimagestyle' src='/images/14.png'></image>
+                <text class='secondfontstyle'>电话</text>
+            </view>
+            <view class='fourthlayout'>
+                <text>18229119068</text>
+            </view>
+        </view>
+        <view class='lineviewtwo'></view>
+        <view class='thirdlayout' bindtap="bindViewTap">
+            <view class='thirdlayout'>
+                <image class='secondimagestyle' src='/images/15.png'></image>
+                <text class='secondfontstyle'>电子邮箱</text>
+            </view>
+            <view class='fourthlayout' >
+                <text>zhumeng@163.com</text>
+            </view>
+        </view>
+        <view class='lineviewtwo'></view>
+        <view class='thirdlayout'  bindtap="onShareTap">
+            <view class='thirdlayout'>
+                <image class='secondimagestyle' src='/images/16.png'></image>
+                <text class='secondfontstyle'>官方网站</text>
+            </view>
+            <view class='fourthlayout'>
+                <text>www.zhumeng.com</text>
+            </view>
+        </view>
+        <view class='lineviewtwo'></view>
+    </view>
+    <view class='lastlayout'></view>
+    <view class='lasttext'>
+        <view>
+            <text>湘ICP备123455号</text>
+        </view>
+        <view>
+            <text>筑梦工作室</text>
+        </view>
+    </view>
+</view>

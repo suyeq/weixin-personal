@@ -1,0 +1,71 @@
+<view class='container'>
+    
+    <view class='firstlayout'>
+        <image src='/images/1.jpg' class='firstimagestyle'></image>
+    </view>
+    <view class='lineview'></view>
+    <view class='thirdlayout' bindtap='bindViewTap'>
+        <view class='thirdlayoutitem'>
+            <text>昵称</text>
+        </view>
+        <view class='fourthlayout'>
+            <view class='fourthlayoutitem'>
+                <view class='margin'>
+                    <text class='margin'>溯夜</text>
+                </view>
+            </view>
+            <view class='fourthlayoutitemtwo'>
+                <image src='/images/2.png' class='thirdimagestyle'></image> 
+            </view>
+        </view>
+    </view>
+    <view class='lineview'></view>
+    <view class='thirdlayout' >
+        <view class='thirdlayoutitem'>
+            <text>微信号</text>
+        </view>
+        <view class='fourthlayout'>
+            <view class='fourthlayoutitem'>
+                <view class='margin'>
+                    <text class='margin'>suyeq233</text>
+                </view>
+            </view>
+            <view class='fourthlayoutitemtwo'>
+                <image src='/images/2.png' class='thirdimagestyle'></image> 
+            </view>
+        </view>
+    </view>
+    <view class='lineview'></view>
+    <view class='thirdlayout' >
+        <view class='thirdlayoutitem'>
+            <text>手机</text>
+        </view>
+        <view class='fourthlayout'>
+            <view class='fourthlayoutitem'>
+                <view class='margin'>
+                    <text class='margin'>18229119068</text>
+                </view>
+            </view>
+            <view class='fourthlayoutitemtwo'>
+                <image src='/images/2.png' class='thirdimagestyle'></image> 
+            </view>
+        </view>
+    </view>
+    <view class='lineview'></view>
+    <view class='thirdlayout' >
+        <view class='thirdlayoutitem'>
+            <text>地址</text>
+        </view>
+        <view class='fourthlayout'>
+            <view class='fourthlayoutitem'>
+                <view class='margin'>
+                    <text class='margin'>株洲茶陵</text>
+                </view>
+            </view>
+            <view class='fourthlayoutitemtwo'>
+                <image src='/images/2.png' class='thirdimagestyle'></image> 
+            </view>
+        </view>
+    </view>
+    <view class='lineview'></view>
+</view>

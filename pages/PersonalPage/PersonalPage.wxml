@@ -1,0 +1,69 @@
+<view class='containe'>
+    <view class='firstlayout'>
+        <image src='/images/1.jpg'  class='firstimagestyle'></image>
+        <text class='firstfontstyle'>溯夜</text>
+        <view class='secondlayout'>
+            <view class='secondlayoutitem'>
+                <text class='firstfontstyle'>积分：</text>
+                <text class='firstfontstyle'>0</text>
+            </view>
+            <view  class='lineview'></view>
+            <view class='secondlayoutitem'>
+                <text class='firstfontstyle'>等级：</text>
+                <text class='firstfontstyle'>Lv.0</text>
+            </view>
+        </view>
+    </view>
+    <view class='containe'>
+        <view class='thirdlayout' bindtap='bindViewTapbasic'>
+            <view class='thirdlayout'>
+                <image class='secondimagestyle' src='/images/5.png'></image>
+                <text class='secondfontstyle'>基本信息</text>
+            </view>
+            <view class='fourthlayout'>
+                <image src='/images/2.png' class='thirdimagestyle'></image>
+            </view>
+        </view>
+        <view class='lineviewtwo'></view>
+        <view class='thirdlayout' bindtap='bindViewTapaddress'>
+            <view class='thirdlayout'>
+                <image class='secondimagestyle' src='/images/3.png'></image>
+                <text class='secondfontstyle'>收货地址</text>
+            </view>
+            <view class='fourthlayout'>
+                <image src='/images/2.png' class='thirdimagestyle'></image>
+            </view>
+        </view>
+        <view class='lineviewtwo'></view>
+        <view class='thirdlayout' bindtap="bindViewTap">
+            <view class='thirdlayout'>
+                <image class='secondimagestyle' src='/images/7.png'></image>
+                <text class='secondfontstyle'>订单管理</text>
+            </view>
+            <view class='fourthlayout' >
+                <image src='/images/2.png' class='thirdimagestyle'></image>
+            </view>
+        </view>
+        <view class='lineviewtwo'></view>
+        <view class='thirdlayout'  bindtap="onShareTap">
+            <view class='thirdlayout'>
+                <image class='secondimagestyle' src='/images/4.png'></image>
+                <text class='secondfontstyle'>分享推荐</text>
+            </view>
+            <view class='fourthlayout'>
+                <image src='/images/2.png' class='thirdimagestyle'></image>
+            </view>
+        </view>
+        <view class='lineviewtwo'></view>
+        <view class='thirdlayout' bindtap='bindViewTapsetup'>
+            <view class='thirdlayout'>
+                <image class='secondimagestyle' src='/images/6.png'></image>
+                <text class='secondfontstyle'>系统设置</text>
+            </view>
+            <view class='fourthlayout'>
+                <image src='/images/2.png' class='thirdimagestyle'></image>
+            </view>
+        </view>
+        <view class='lineviewtwo'></view>
+    </view>
+</view>
