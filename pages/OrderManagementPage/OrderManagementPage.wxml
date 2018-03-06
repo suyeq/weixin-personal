@@ -1,7 +1,10 @@
+<import src="OrdersOngoingItem/OrdersOngoingItem.wxml"/>
+<import src="OrderCompleteItem/OrderCompleteItem.wxml"/>
+<import src="OrderConcelItem/OrderConcelItem.wxml"/>
 <view class='container'>
     <view class='lineview'></view>
     <view class='firstlayout'>
-        <view class='firstlayoutitem' bindtap='selectColorone'>
+        <view class='firstlayoutitem' bindtap='selectColorone' >
             <view class='firstlayoutitemtwo'>
                 <text class="{{onGoing?'firstfontcolorstyle':'secondfontcolorstyle'}}">进行中</text>
             </view>
@@ -15,38 +18,26 @@
             <view class="{{completed?'lineviewtwo':'lineviewthree'}}"></view>
         </view>
         <view class='lineviewfour'></view>
-        <view class='firstlayoutitem' bindtap='selectColorthree'>
+        <view class='firstlayoutitem' bindtap='selectColorthree' >
             <view class='firstlayoutitemtwo'>
                 <text class="{{canceled?'firstfontcolorstyle':'secondfontcolorstyle'}}">已取消</text>
             </view>
             <view class="{{canceled?'lineviewtwo':'lineviewthree'}}"></view>
         </view>
     </view>
-    
-    <block wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
-        <view>
-            <view class='secondlayout'>
-                <image src="{{item.imagesrc}}" class='firstimagestyle'></image>
-                <view class='containeritem'>
-                    <view class='secondlayoutitemtwo'>
-                    <text>{{item.name}}</text>
-                <view class='secondlayoutitem' bindtap="onPostTap">
-                    <text>订单详情</text>
-                </view>
-            </view>
-            <view class='firstlayoutitemthree'>
-                <text class='thirdfondstyle'>缺少项：</text>
-                <text class='thirdfondstyle'>{{item.lackofitems}}</text>
-            </view>
-            <view class='firstlayoutitemfour'>
-                <text class='secondfondstyle'>¥ {{item.price}}</text>
-                <view class='firstlayoutitemfouritem' bindtap="showToast">
-                    <text>确认收货</text>
-                </view>
-            </view>
+    <block wx:if="{{orderStutas==0}}" wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
+        <view data-postId="{{item.postId}}">
+            <template is="OngoingItem" data="{{...item}}"/>
         </view>
-    </view>
-    <view class='lineview'></view>
+    </block>
+    <block wx:if="{{orderStutas==1}}" wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
+        <view data-postId="{{item.postId}}">
+            <template is="CompleteItem" data="{{...item}}"/>
+        </view>
+    </block>
+    <block wx:if="{{orderStutas==-1}}" wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
+        <view data-postId="{{item.postId}}">
+            <template is="ConcelItem" data="{{...item}}"/>
         </view>
     </block>
 </view>

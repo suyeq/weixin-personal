@@ -1,0 +1,127 @@
+.lineview{
+  width: 100%;
+  height: 1px;
+  background: #708090;
+}
+
+.container{
+    /*弹性模型*/
+    display:flex;
+    /*垂直方向 列方向 排布*/
+    flex-direction:column; 
+    width: 100%;
+    height: 100%;
+}
+
+.firstlayout{
+   width: 100%;
+   height: 100rpx;
+   display:flex;
+   flex-direction:row;
+   align-items: center;
+}
+
+.firstlayoutitem{
+   display:flex;
+  flex-direction:column; 
+   width: 0rpx;
+   flex: 1;
+   height: 100%;
+}
+
+.firstlayoutitemtwo{
+  display:flex;
+  flex-direction:row; 
+  width: 100%;
+  height: 100%;
+  justify-content:center;
+  align-items: center;
+}
+.lineviewtwo{
+  width: 100%;
+  height: 1px;
+  background: #FFA500;
+}
+
+.lineviewthree{
+  width: 100%;
+  height: 1px;
+  background: #708090;
+}
+.firstfontcolorstyle{
+  color:#FFA500;
+}
+.secondfontcolorstyle{
+  color:#000000;
+}
+.secondlayout{
+  width: 100%;
+  height: 220rpx;
+  display:flex;
+  flex-direction:row; 
+}
+.secondlayoutitemtwo{
+  flex: 1;
+  height: 80rpx;
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  margin-top: 6rpx;
+}
+.secondlayoutitem{
+  flex: 1;
+  height: 100%rpx;
+  text-align: right;
+  margin-right: 20rpx;
+}
+.firstimagestyle{
+  width: 200rpx;
+  height: 180rpx;
+  margin: 20rpx;
+}
+
+.firstfontstyle{
+  font-size: 34rpx;
+}
+.containeritem{
+   display:flex;
+    /*垂直方向 列方向 排布*/
+    flex-direction:column; 
+    width: 0rpx;
+    flex: 1;
+    height: 100%;
+}
+
+.firstlayoutitemthree{
+  flex: 1;
+  height: 60rpx;
+  display:flex;
+  flex-direction:row; 
+  align-items: center;
+}
+.firstlayoutitemfour{
+  flex: 1;
+  height: 60rpx;
+  display:flex;
+  flex-direction:row; 
+  align-items: center;
+}
+.firstlayoutitemfouritem{
+   flex: 1;
+  height: 100%rpx;
+  text-align: right;
+  margin-right: 20rpx;
+}
+.secondfondstyle{
+   
+  color: #FF0000;
+}
+.thirdfondstyle{
+  font-size:34rpx;
+}
+
+.lineviewfour{
+  width: 1px;
+  height: 60rpx;
+  background: #708090;
+}

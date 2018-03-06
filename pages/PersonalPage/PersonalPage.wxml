@@ -1,16 +1,16 @@
 <view class='containe'>
     <view class='firstlayout'>
-        <image src='/images/1.jpg'  class='firstimagestyle'></image>
+        <image src="{{personal.img}}"  class='firstimagestyle'></image>
         <text class='firstfontstyle'>溯夜</text>
         <view class='secondlayout'>
             <view class='secondlayoutitem'>
                 <text class='firstfontstyle'>积分：</text>
-                <text class='firstfontstyle'>0</text>
+                <text class='firstfontstyle'>{{personal.scores}}</text>
             </view>
             <view  class='lineview'></view>
             <view class='secondlayoutitem'>
                 <text class='firstfontstyle'>等级：</text>
-                <text class='firstfontstyle'>Lv.0</text>
+                <text class='firstfontstyle'>Lv.{{personal.lv}}</text>
             </view>
         </view>
     </view>

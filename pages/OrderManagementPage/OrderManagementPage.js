@@ -6,29 +6,34 @@ Page({
   data: {
     onGoing:true,
     completed:false,
-    canceled:false
+    canceled:false,
+    orderStutas: 0
   },
 selectColorone:function(){
   this.setData({
     onGoing: true,
     completed: false,
-    canceled: false
+    canceled: false,
+    orderStutas: 0
   })  
 },
 selectColortwo: function () {
   this.setData({
     onGoing: false,
     completed: true,
-    canceled: false
+    canceled: false,
+    orderStutas: 1
   })
 },
 selectColorthree: function () {
   this.setData({
     onGoing: false,
     completed: false,
-    canceled: true
+    canceled: true,
+    orderStutas: -1
   })
 },
+  
   /**
    * 生命周期函数--监听页面加载
    */

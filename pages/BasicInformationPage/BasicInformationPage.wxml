@@ -1,7 +1,7 @@
 <view class='container'>
     
     <view class='firstlayout'>
-        <image src='/images/1.jpg' class='firstimagestyle'></image>
+        <image src="{{basic.img}}" class='firstimagestyle'></image>
     </view>
     <view class='lineview'></view>
     <view class='thirdlayout' bindtap='bindViewTap'>
@@ -11,7 +11,7 @@
         <view class='fourthlayout'>
             <view class='fourthlayoutitem'>
                 <view class='margin'>
-                    <text class='margin'>溯夜</text>
+                    <text class='margin'>{{basic.name}}</text>
                 </view>
             </view>
             <view class='fourthlayoutitemtwo'>
@@ -27,7 +27,7 @@
         <view class='fourthlayout'>
             <view class='fourthlayoutitem'>
                 <view class='margin'>
-                    <text class='margin'>suyeq233</text>
+                    <text class='margin'>{{basic.wx}}</text>
                 </view>
             </view>
             <view class='fourthlayoutitemtwo'>
@@ -43,7 +43,7 @@
         <view class='fourthlayout'>
             <view class='fourthlayoutitem'>
                 <view class='margin'>
-                    <text class='margin'>18229119068</text>
+                    <text class='margin'>{{basic.phone}}</text>
                 </view>
             </view>
             <view class='fourthlayoutitemtwo'>
@@ -59,7 +59,7 @@
         <view class='fourthlayout'>
             <view class='fourthlayoutitem'>
                 <view class='margin'>
-                    <text class='margin'>株洲茶陵</text>
+                    <text class='margin'>{{basic.adress}}</text>
                 </view>
             </view>
             <view class='fourthlayoutitemtwo'>

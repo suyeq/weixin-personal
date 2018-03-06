@@ -1,0 +1,24 @@
+<template name="ConcelItem">
+            <view class='secondlayout'>
+                <image src="{{imagesrc}}" class='firstimagestyle'></image>
+                <view class='containeritem'>
+                    <view class='secondlayoutitemtwo'>
+                    <text>{{name}}</text>
+                <view class='secondlayoutitem' bindtap="onPostTap">
+                    <text>订单详情</text>
+                </view>
+            </view>
+            <view class='firstlayoutitemthree'>
+                <text class='thirdfondstyle'>缺少项：</text>
+                <text class='thirdfondstyle'>{{lackofitems}}</text>
+            </view>
+            <view class='firstlayoutitemfour'>
+                <text class='secondfondstyle'>¥ {{price}}</text>
+                <view class='firstlayoutitemfouritem' >
+                    <text>已取消</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='lineview'></view>
+</template>
