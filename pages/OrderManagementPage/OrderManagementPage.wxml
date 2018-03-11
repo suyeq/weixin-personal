@@ -25,19 +25,25 @@
             <view class="{{canceled?'lineviewtwo':'lineviewthree'}}"></view>
         </view>
     </view>
-    <block wx:if="{{orderStutas==0}}" wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
-        <view data-postId="{{item.postId}}">
+    <scroll-view scroll-y="true" style="height:1200rpx;width:100%" bindscrolltolower="loadMore" bindscrolltoupper="refesh">
+         <view wx:if="{{hasRefesh}}" style="display: flex;flex-direction: row;align-items: center;align-self: center;justify-content: center">
+      <icon type="waiting" size="45"/><text>刷新中...</text>
+      </view>
+      <block wx:if="{{orderStutas==0}}" wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
+        <view catchtap='onPostTap' data-postId="{{item.postId}}"  data-state="{{item.recoverystate}}">
             <template is="OngoingItem" data="{{...item}}"/>
         </view>
     </block>
     <block wx:if="{{orderStutas==1}}" wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
-        <view data-postId="{{item.postId}}">
+        <view catchtap='onPostTap' data-postId="{{item.postId}}" data-state="{{item.recoverystate}}">
             <template is="CompleteItem" data="{{...item}}"/>
         </view>
     </block>
     <block wx:if="{{orderStutas==-1}}" wx:for="{{posts_key}}" wx:for-item="item" wx:for-index="idx">
-        <view data-postId="{{item.postId}}">
+        <view catchtap='onPostTap' data-postId="{{item.postId}}" data-state="{{item.recoverystate}}">
             <template is="ConcelItem" data="{{...item}}"/>
         </view>
     </block>
+    </scroll-view>
+   
 </view>

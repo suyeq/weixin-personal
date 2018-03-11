@@ -1,7 +1,6 @@
 var local_personal = {
-  scores:9,
-  lv:10,
-  img:"/images/1.jpg"
+  scores:99,
+  lv:10
 }
  
 

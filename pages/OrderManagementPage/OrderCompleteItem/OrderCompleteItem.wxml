@@ -4,7 +4,7 @@
                 <view class='containeritem'>
                     <view class='secondlayoutitemtwo'>
                     <text>{{name}}</text>
-                <view class='secondlayoutitem' bindtap="onPostTap">
+                <view class='secondlayoutitem' >
                     <text>订单详情</text>
                 </view>
             </view>

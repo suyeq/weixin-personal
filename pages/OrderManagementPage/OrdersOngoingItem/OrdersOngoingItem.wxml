@@ -4,7 +4,7 @@
                 <view class='containeritem'>
                     <view class='secondlayoutitemtwo'>
                     <text>{{name}}</text>
-                <view class='secondlayoutitem' bindtap="onPostTap">
+                <view class='secondlayoutitem' >
                     <text>订单详情</text>
                 </view>
             </view>
@@ -14,8 +14,8 @@
             </view>
             <view class='firstlayoutitemfour'>
                 <text class='secondfondstyle'>¥ {{price}}</text>
-                <view class='firstlayoutitemfouritem' bindtap="showToast">
-                    <text>确认收货</text>
+                <view class='firstlayoutitemfouritem' >
+                    <text catchtap="showToast">确认收货</text>
                 </view>
             </view>
         </view>

@@ -1,17 +1,33 @@
 <view class='container'>
-    
+   
     <view class='firstlayout'>
-        <image src="{{basic.img}}" class='firstimagestyle'></image>
+        <image src="{{img}}" class='firstimagestyle'></image>
     </view>
     <view class='lineview'></view>
-    <view class='thirdlayout' bindtap='bindViewTap'>
+    <view class='thirdlayout' >
         <view class='thirdlayoutitem'>
             <text>昵称</text>
         </view>
         <view class='fourthlayout'>
             <view class='fourthlayoutitem'>
                 <view class='margin'>
-                    <text class='margin'>{{basic.name}}</text>
+                    <text class='margin'>{{name}}</text>
+                </view>
+            </view>
+            <view class='fourthlayoutitemtwo'>
+                <image src='/images/2.png' class='thirdimagestyle'></image> 
+            </view>
+        </view>
+    </view>
+    <view class='lineview'></view>
+    <view class='thirdlayout' >
+        <view class='thirdlayoutitem'>
+            <text>性别</text>
+        </view>
+        <view class='fourthlayout'>
+            <view class='fourthlayoutitem'>
+                <view class='margin'>
+                    <text class='margin'>{{sex}}</text>
                 </view>
             </view>
             <view class='fourthlayoutitemtwo'>
@@ -27,7 +43,7 @@
         <view class='fourthlayout'>
             <view class='fourthlayoutitem'>
                 <view class='margin'>
-                    <text class='margin'>{{basic.wx}}</text>
+                    <text class='margin'>{{wx}}</text>
                 </view>
             </view>
             <view class='fourthlayoutitemtwo'>
@@ -40,10 +56,10 @@
         <view class='thirdlayoutitem'>
             <text>手机</text>
         </view>
-        <view class='fourthlayout'>
+        <view class='fourthlayout' bindtap='bindViewTap'>
             <view class='fourthlayoutitem'>
                 <view class='margin'>
-                    <text class='margin'>{{basic.phone}}</text>
+                    <text class='margin'>{{phone}}</text>
                 </view>
             </view>
             <view class='fourthlayoutitemtwo'>
@@ -59,7 +75,7 @@
         <view class='fourthlayout'>
             <view class='fourthlayoutitem'>
                 <view class='margin'>
-                    <text class='margin'>{{basic.adress}}</text>
+                    <text class='margin'>{{province}}{{city}}</text>
                 </view>
             </view>
             <view class='fourthlayoutitemtwo'>

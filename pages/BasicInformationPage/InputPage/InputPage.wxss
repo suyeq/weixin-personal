@@ -2,11 +2,11 @@
   width: 99%;
   height: 200rpx;
   border:1px solid #FFA500;
-   border-radius: 10rpx;
+  border-radius: 10rpx;
 }
 .input{
   width: 100%;
-  height: 100%;
+  height: 100rpx
 }
 .maincontainer{
    display:flex;

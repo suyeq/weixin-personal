@@ -7,6 +7,9 @@ Page({
     
   },
   showToast: function () {
+    wx.navigateBack({
+      delta: 2
+    });
     wx.showToast({
       title: "提交成功",
       duration: 1000,

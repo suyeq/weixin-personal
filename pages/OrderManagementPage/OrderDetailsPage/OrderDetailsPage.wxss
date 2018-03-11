@@ -3,9 +3,6 @@
     display:flex;
     /*垂直方向 列方向 排布*/
     flex-direction:column; 
-    width: 100%;
-    height: 100%;
-    
 }
 swiper{
      width:100%;
@@ -118,7 +115,7 @@ swiper{
     border-radius: 10px;
    justify-content:center;
     align-items: center;
-    margin-top: 30rpx;
+    margin-top: 20rpx;
     margin-left: 176rpx;
     background: #405f80;
 }

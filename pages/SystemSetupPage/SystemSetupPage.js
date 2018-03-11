@@ -17,6 +17,7 @@ bindTabVersion: function () {
     duration: 1000,
     icon:'false'
   })*/
+  
   wx.showModal({
     title: '版本信息',
     content: '版本号：1.0',
@@ -24,6 +25,7 @@ bindTabVersion: function () {
   })
 },
 bindTababoutus: function () {
+  
   wx.navigateTo({
     url: 'AboutUsPage/AboutUsPage'
   });

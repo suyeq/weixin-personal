@@ -6,21 +6,21 @@
     /*居中*/
     align-items:center;
     width: 100%;
-    height: 100%;
+   
     
 }
 .lastlayout{
   width: 100%;
-  height: 0;
-  flex: 1;
+  height: 300rpx;
+  background: white;
 }
 .lasttext{
    width: 100%;
-   height: 150rpx;
+   height: 100%;
    text-align: center;
    font-size: 30rpx;
    color: #DCDCDC;
-   margin-top: 300rpx;
+  
 }
 .firstlayout{
    /*弹性模型*/

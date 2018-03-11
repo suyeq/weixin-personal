@@ -1,0 +1,67 @@
+<template name="templatetwo">
+<view class='container'>
+    <swiper vertical="{{false}}" indicator-dots="true" autoplay="true" interval="5000">
+        <swiper-item>
+            <image src="{{img1}}" data-postId="3"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="{{img2}}" data-postId="4"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="{{img3}}" data-postId="5"></image>
+        </swiper-item>
+    </swiper>
+    <view class='firstlayout'>
+        <text class='firstfontstyle'>{{name}}</text>
+        <view class='firstlayoutitem'>
+            <text class='secondfontstyle'>发布时间： {{starttime}}</text>
+            <view class='firstlayoutitemtwo'>
+                <text>回收编号： {{recoverynumber}}</text>
+            </view>
+        </view>
+    </view>
+    <view class='lineview'></view>
+    <view class='secondlayout'>
+        <view class='secondlayoutitem'>
+            <text class='thirdfontstyle'>回收价</text>
+            <text class='fourfontstyle'>{{price}}元/个</text>
+        </view>
+        <view class='lineviewtwo'></view>
+        <view class='secondlayoutitem'>
+            <text class='thirdfontstyle'>产品名称</text>
+            <text class='fourfontstyle'>{{name}}</text>
+        </view>
+        <view class='lineviewtwo'></view>
+        <view class='secondlayoutitem'>
+            <text class='thirdfontstyle'>回收数量</text>
+            <text class='fourfontstyle'>{{numbers}}个</text>
+        </view>
+    </view>
+    <view class='lineview'></view>
+    <view class='thirdlayout'>
+        <view class='thirdlayoutitem'>
+            <view class='redround'></view>
+            <text class='thirdlayoutitemtwo'>废品概括</text>
+        </view>
+        <view class='thirdlayoutitem'>
+            <text class='fivefontstyle'>一、回收品种：{{recoveryvariety}}</text> 
+        </view>
+        <view class='thirdlayoutitem'>
+            <text class='fivefontstyle'>二、缺少项：{{lackofitems}}</text>
+        </view>
+    </view>
+    
+    <view class='thirdlayout'>
+        <view class='thirdlayoutitem'>
+            <view class='redround'></view>
+            <text class='thirdlayoutitemtwo'>回收要求</text>
+        </view>
+        <view class='thirdlayoutitem'>
+            <text class='fivefontstyle'>一、截止时间：{{endtime}}</text> 
+        </view>
+        <view class='thirdlayoutitem'>
+            <text class='fivefontstyle'>二、回收方式：{{recoverymode}}</text>
+        </view>
+    </view> 
+</view>
+</template>

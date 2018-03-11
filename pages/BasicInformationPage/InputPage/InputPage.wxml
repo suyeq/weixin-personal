@@ -1,6 +1,6 @@
 <view class='maincontainer'>
     <view class='container'>
-        <input class='input' placeholder="溯夜" placeholder-style="font-size:18px;margin-top:-60rpx"></input>
+        <input class='input'  placeholder-style="font-size:15px" bindinput='getInput'></input>
     </view>
     <view class='fourlayoutstyle' bindtap='showToast'>
         <view class="journey-container" >

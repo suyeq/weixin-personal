@@ -4,9 +4,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    key:null
   },
-  showToast: function () {
+  getInput:function(e){
+    this.data.key = e.detail.value; 
+   
+  },
+  showToast: function (event) {
+   
+   /* console.log(phone);
+    var phone = event.currentTarget.dataset.phone;
+    var pages = getCurrentPages();
+    var currPage = pages[pages.length - 1];  //当前页面
+    var prevPage = pages[pages.length - 2]; //上一个页面
+    //直接调用上一个页面的setData()方法，把数据存到上一个页面中去
+    prevPage.setData({
+      "phone": phone
+    });*/
+    
+    wx.navigateBack({
+    });
     wx.showToast({
       title: "提交成功",
       duration: 1000,

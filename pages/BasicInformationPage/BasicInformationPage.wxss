@@ -13,8 +13,9 @@
     flex-direction:column;
     align-items:center; 
     width: 100%;
-    height: 300rpx;
+    height: 350rpx;
     justify-content:center;
+    margin-top: -60rpx;
 }
 .firstimagestyle{
   width: 200rpx;

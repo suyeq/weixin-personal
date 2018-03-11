@@ -31,6 +31,9 @@ Page({
     areaInfo:"选择地区"
   },
   showToast: function () {
+    wx.navigateBack({
+      delta: 1
+    });
     wx.showToast({
       title: "提交成功",
       duration: 1000,

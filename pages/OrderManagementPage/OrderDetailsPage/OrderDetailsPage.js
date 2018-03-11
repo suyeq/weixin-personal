@@ -1,3 +1,6 @@
+var postsData = require('../../../dates/ordersongoing.js')
+//var postsData2 = require('../../../dates/orderscomplete.js')
+//var postsData3 = require('../../../dates/ordersconcel.js')
 Page({
 
   /**
@@ -11,9 +14,39 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-  },
 
+    var postId = options.id;
+    var state = options.stateb;
+    console.log(state);
+    this.data.currentPostId = postId;
+    if(state==0){
+      var postData = postsData.local[postId];
+      this.setData({
+        "postData": postData,
+      });
+    } else if (state == 1){
+      var postData = postsData.local[postId];
+      this.setData({
+        "postData": postData,
+      });
+    }else{
+      var postData = postsData.local[postId];
+      this.setData({
+        "postData": postData,
+      });
+    }
+   
+  },
+onTabConcel:function(){
+  wx.navigateBack({
+    delta: 1
+  });
+  wx.showToast({
+    title: "已取消",
+    duration: 1000,
+    icon: "success"
+  });
+},
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -12,8 +12,8 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "买家",
-    "navigationBarTextStyle":"black"
+   "navigationBarBackgroundColor": "#405f80",
+  "navigationBarTextStyle": "white"
   }
 }

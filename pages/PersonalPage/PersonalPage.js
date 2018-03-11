@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    img:"/images/1.jpg",
+    name:"筑梦",
   },
 
 
@@ -54,8 +55,24 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var _this = this;
+    wx.getUserInfo({
+      success: function (res) {
+        var avatarUrl = res.userInfo.avatarUrl;
+        var nickName = res.userInfo.nickName;
+        var gender = res.userInfo.gender; //性别 0：未知、1：男、2：女 
+        var province = res.userInfo.province;
+        var city = res.userInfo.city;
+        _this.setData({
+          "img": avatarUrl,
+          "name": nickName,
+          "province": province,
+          "city": city
+        });
+      }
+    })
     this.setData({
-      personal: postsData.personal
+      "personal": postsData.personal
     });
   },
 

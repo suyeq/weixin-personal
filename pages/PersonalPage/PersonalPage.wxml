@@ -1,7 +1,7 @@
 <view class='containe'>
     <view class='firstlayout'>
-        <image src="{{personal.img}}"  class='firstimagestyle'></image>
-        <text class='firstfontstyle'>溯夜</text>
+        <image src="{{img}}"  class='firstimagestyle'></image>
+        <text class='firstfontstyle'>{{name}}</text>
         <view class='secondlayout'>
             <view class='secondlayoutitem'>
                 <text class='firstfontstyle'>积分：</text>
